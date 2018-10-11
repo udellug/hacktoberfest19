@@ -11,7 +11,8 @@ for line in f:
     email = line.split(',')[1].strip()
     contributors_md[name] = email
 
-print contributors_md, contributors_json
+print contributors_md
+print contributors_json
 
 for key in contributors_md:
     if contributors_md[key] != contributors_json[key]:
